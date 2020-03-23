@@ -3,7 +3,7 @@ def bubble_sort(array)
   size = array.length - 1
   loop do
     swapped = false
-    0.upto(size).each do |n|
+    size.times do |n|
       if array[n].to_i > array[n + 1].to_i
         array[n + 1], array[n] = array[n], array[n + 1]
         swapped = true
